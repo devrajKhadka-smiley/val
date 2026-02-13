@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Message For You...</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="particles"></div>
+  <div class="burst-overlay" id="burst-overlay">
+    <div class="grand-heart">❤️</div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="content-wrapper">
+      <!-- Photos Scattered Around the Card -->
+      <div class="gallery-container">
+        <div class="polaroid p1">
+          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=400" alt="Moment 1">
+        </div>
+        <div class="polaroid p2">
+          <img src="https://images.unsplash.com/photo-1516589174184-c6848b11674c?q=80&w=400" alt="Moment 2">
+        </div>
+        <div class="polaroid p3">
+          <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=400" alt="Moment 3">
+        </div>
+        <div class="polaroid p4">
+          <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=400" alt="Moment 4">
+        </div>
+        <div class="polaroid p5">
+          <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=400" alt="Moment 5">
+        </div>
+      </div>
+
+      <!-- Intro: The Envelope -->
+      <div class="envelope-wrapper" id="intro-screen">
+        <div class="envelope" id="envelope">
+          <div class="wax-seal">💌</div>
+        </div>
+        <p style="margin-top: 20px; color: var(--secondary-pink);" class="handwritten">Click to open...</p>
+      </div>
+
+      <!-- Screen 1: The Heartfelt Start -->
+      <div class="screen" id="screen-1">
+        <p class="narrative-text handwritten">Happy Valentine's Day, Sani!</p>
+        <p class="narrative-text handwritten">Well, neither this Valentine's nor the previous one was celebrated
+          properly, I know, but this time here is something special for you!</p>
+        <button class="btn-next" onclick="nextScreen(1)">Continue →</button>
+      </div>
+
+
+
+
+      <!-- Screen 3: The Proposal -->
+      <div class="screen proposal-box" id="screen-3">
+        <h1 class="romantic-font">Well, you've already been my special love for the last 7 years.</h1>
+        <p class="handwritten" id="main-prompt" style="font-size: 1.2rem;">Still, I want to ask... (Choose carefully,
+          the "No" button is very sensitive today!)</p>
+
+        <div class="btn-group">
+          <div id="bribe-msg" class="bribe-msg">I'll buy you pizza! 🍕</div>
+          <button class="btn-valentine btn-yes" id="yesBtn">Yes, Forever! ❤️</button>
+          <button class="btn-valentine btn-no" id="noBtn">No</button>
+        </div>
+      </div>
+
+      <!-- Screen 4: Celebration -->
+      <div class="screen celebration" id="celebration">
+        <h1 class="romantic-font">HEHE Thah Theyo! 🎉❤️❤️</h1>
+        <p class="narrative-text handwritten">Well, yesari nai jindagi sath bitauna pau. Love you the most, and again,
+          Happy Valentine's Day!</p>
+        <p class="handwritten" style="color: var(--primary-pink); margin-top: 20px;">I love you! 💖</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
